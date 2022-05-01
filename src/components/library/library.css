@@ -1,0 +1,21 @@
+/**
+* ! Library
+*/
+
+.category-content {
+	display: flex;
+	flex-wrap: wrap;
+
+	column-gap: 20px;
+	row-gap: 5px;
+}
+
+
+
+.category-content .card:first-of-type {
+	margin-left: 0px;
+}
+
+.category-content .card:last-of-type {
+	margin-right: 0px;
+}

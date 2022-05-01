@@ -1,0 +1,90 @@
+:root {
+	/**
+    * * Variable global de l'app
+    */
+
+	--body-background-color: #04111e;
+	--color-primary: #fff;
+	--color-secondary: #9099aa; /*#6f81a5;*/
+	--color-error: #d93025;
+	--color-success: #05aa78;
+
+	/**
+    * * Couleur du formulaire
+    */
+
+	--input-background-color: #091e31;
+	--input-color-primary: var(--color-primary);
+	--input-color-secondary: var(--color-secondary);
+	--input-color-error: var(--color-error);
+	--input-color-success: var(--color-success);
+
+	--input-btn-background-color: #0c6188;
+	--input-btn-hover-background-color: #1b78a3;
+	--input-btn-disabled-background-color: #3a7692;
+	--input-btn-color: var(--color-primary);
+
+	/**
+	* * Couleur Navbar
+	*/
+
+	--navbar-background-color: #0c2842;
+	--navbar-color-primary: var(--color-primary);
+	--navbar-color-secondary: var(--color-secondary);
+	--navbar-background-color-modal: #24394c;
+	--navbar-background-color-modal-hover: #2f4a63;
+
+	/**
+	* * Couleur SearchBar
+	*/
+
+	--searchbar-input-background-color: #001930;
+	--searchbar-input-color: var(--color-secondary);
+	--searchbar-input-btn: var(--navbar-background-color-modal);
+	--searchbar-input-btn-hover: var(--color-primary);
+	--searchbar-input-bg-btn-hover: var(--navbar-background-color-modal-hover);
+	--searchbar-item-name: #b8bbc0;
+	--searchbar-item-desc: #9099aa;
+
+	/**
+	* * Couleur ContextMenu
+	*/
+
+	--background-color-context-menu: rgba(36, 57, 76, 0.95);
+	--background-color-context-menu-hover: rgba(255, 255, 255, 0.1);
+
+	/**
+	* * Couleur Modal
+	*/
+	--modal-background-color: rgba(36, 57, 76, 0.8);
+	--modal-header-background-color: #091e31;
+	--modal-content-background-color: #09233b;
+	--background-color-modal-hover: var(--navbar-background-color-modal-hover);
+
+
+	/**
+	* * Couleur card loading
+	*/
+	--bg-card-loading: #01060c;
+
+
+	/**
+	* * Couleur ListBox 
+	*/
+
+	--list-box-color-value: var(--color-primary);
+	--list-box-bg-value: var(--navbar-background-color-modal);
+	--list-box-color-options: var(--color-primary);
+	--list-box-bg-options: var(--navbar-background-color-modal);
+	--list-box-bg-hover-options: var(--navbar-background-color-modal-hover);
+	--list-box-bg-active-options: #4e6c8a;
+
+
+
+	/**
+	* * Couleur progressbar
+	*/
+
+	--bg-color-progressbar: var(--navbar-background-color);
+	--bg-color-progressbar-inner: #1b78a3;
+}

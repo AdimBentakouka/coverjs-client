@@ -1,0 +1,52 @@
+.list-box-container {
+    position: relative;
+}
+
+
+.list-box-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    user-select: none;
+
+    cursor: pointer;
+    color: var(--list-box-color-value);
+    background-color: var(--list-box-bg-value);
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+}
+
+.list-box-options {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-height: 300px;
+
+    margin-top: 20px;
+   
+    color: var(--list-box-color-options);
+    background-color: var(--list-box-bg-options);
+
+    overflow: auto;
+
+    border-radius: 5px;
+
+    z-index: 10;
+}
+
+.list-box-item {
+    text-align: left;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.list-box-item:hover {
+    background-color: var(--list-box-bg-hover-options);
+}
+
+.list-box-item#active {
+    background-color: var(--list-box-bg-active-options);
+}

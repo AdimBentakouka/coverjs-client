@@ -1,0 +1,113 @@
+/**
+* ! Input
+*/
+.form-input {
+	position: relative;
+	display: flex;
+
+	flex-direction: column;
+
+	margin-bottom: 20px;
+}
+
+.form-input .input-icon {
+	position: absolute;
+
+	pointer-events: none;
+	user-select: none;
+
+	font-size: 32px;
+
+	margin-top: 18px;
+
+	right: 16px;
+}
+
+.form-input .input-label {
+	position: absolute;
+	display: flex;
+	pointer-events: none;
+
+	transform: translate(0, 25px) scale(1);
+	transform-origin: top left;
+
+	color: var(--input-color-secondary);
+
+	font-size: 16px;
+	left: 16px;
+
+	transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.form-input input {
+	height: 40px;
+	padding: 24px 60px 0px 15px;
+
+	font-size: 16px;
+	line-height: 1;
+	outline: none;
+	box-shadow: none;
+	transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+
+	background-color: var(--input-background-color);
+	color: var(--input-color-primary);
+
+	border-radius: 5px;
+	border: none;
+}
+
+.form-input .input-helper {
+	margin-top: 5px;
+
+	font-size: 13px;
+
+	color: var(--input-color-secondary);
+}
+
+.form-input:focus-within .input-label {
+	transform: translate(0, 12px) scale(0.7);
+	color: var(--input-color-primary);
+}
+
+.form-input .input-label.filled {
+	transform: translate(0, 12px) scale(0.7);
+}
+
+.form-input input:focus {
+	box-shadow: 0 0 0 2px var(--input-color-secondary);
+}
+
+.form-input.error input {
+	box-shadow: 0 0 0 2px var(--input-color-error);
+}
+
+.form-input.error .input-label,
+.form-input.error .input-helper,
+.form-input.error .input-icon,
+.form-input.error input {
+	color: var(--input-color-error);
+}
+
+.form-input.success input:focus {
+	box-shadow: 0 0 0 2px var(--input-color-success);
+}
+
+.form-input.success input {
+	box-shadow: 0 0 0 2px var(--input-color-success);
+}
+
+.form-input.success .input-label,
+.form-input.success .input-helper,
+.form-input.success .input-icon,
+.form-input.success input {
+	color: var(--input-color-success);
+}
+.form-input.success input:focus {
+	box-shadow: 0 0 0 2px var(--input-color-success);
+}
+
+.form-input input:-webkit-autofill,
+.form-input input:-webkit-autofill:hover,
+.form-input input:-webkit-autofill:focus {
+	background-color: #000;
+}

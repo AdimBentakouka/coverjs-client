@@ -1,0 +1,48 @@
+/**
+* ! Button
+*/
+
+.form-btn {
+	position: relative;
+	overflow: hidden;
+
+	height: 40px;
+	padding: 0px 40px;
+
+	border-radius: 5px;
+
+	outline: none;
+	border: none;
+
+	color: var(--input-btn-color);
+	background-color: var(--input-btn-background-color);
+
+	user-select: none;
+
+	transition: background 400ms;
+}
+
+.form-btn:hover {
+	background-color: var(--input-btn-hover-background-color);
+	transition: background 400ms;
+}
+
+.form-btn:disabled {
+	background-color: var(--input-btn-disabled-background-color);
+	cursor: not-allowed;
+}
+
+.form-btn .ripple {
+	position: absolute;
+	border-radius: 50%;
+	transform: scale(0);
+	animation: wave 600ms linear;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes wave {
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}
+}

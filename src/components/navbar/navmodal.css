@@ -1,0 +1,75 @@
+/**
+* ! Panel User
+*/
+.panel-items {
+	width: 200px;
+}
+
+.nav-modal .item {
+	color: var(--navbar-color-secondary);
+	text-decoration: none;
+}
+
+.nav-modal-item .item {
+	display: flex;
+
+	align-items: center;
+
+	margin-bottom: 10px;
+
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+
+	outline: none;
+	padding: 5px 20px;
+
+	border-radius: 5px;
+
+	cursor: pointer;
+}
+
+.nav-modal-item:last-child .item {
+	margin-bottom: 0px;
+}
+
+.modal-icon {
+	margin-right: 15px;
+}
+
+.nav-modal-item .item:hover {
+	color: var(--navbar-color-primary);
+
+	transition: color 0.15s ease-in-out;
+}
+
+.nav-modal-item:hover {
+	background-color: var(--navbar-background-color-modal-hover);
+	transition: background-color 0.15s ease-in-out;
+}
+
+.modal-title {
+	text-align: center;
+	padding-bottom: 20px;
+
+	border-bottom: 2px solid var(--navbar-background-color-modal-hover);
+}
+.input-vertical {
+	margin-top: 20px;
+	max-width: 130px;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	align-items: center;
+}
+
+.input-vertical input[type="range"] {
+	width: 100%;
+
+	-webkit-appearance: slider-vertical;
+
+	box-sizing: border-box;
+}
+
+.input-vertical .input-label {
+	text-align: right;
+}

@@ -1,0 +1,17 @@
+.reader-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+   
+    
+
+}
+.reader-img img{
+    width: 100%;
+    max-width: 1024px;
+
+    transition: all 0.5s ease-in-out;
+
+}
+
+
